@@ -33,7 +33,9 @@ For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you ma
 
 function summation(num) {
   let finalNum = 0;
+  // Checks to see if i is less than or equal to num
   for (let i = 0; i <= num; i++) {
+    // adds i to our final total
     finalNum += i;
   }
   return finalNum;
@@ -62,10 +64,13 @@ const zooAnimals = [
   */
 
   function animalNames(arr){
+    // Empty array to push values to 
     const displayNames = [];
+    // for every object in the array it pushes the sentences below
     arr.forEach((item) => {
       displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
     });
+    // after we have gone through every object, we return our array
     return displayNames;
   }
   
@@ -77,9 +82,11 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(arr){
+    // returns every animal_name as all lower cased letters
     const finalArr = arr.map((item) => {
       return item.animal_name.toLowerCase();
     });
+    // return our array of lower cased names
     return finalArr;
   }
   
@@ -89,6 +96,7 @@ const zooAnimals = [
   */
 
   function lowPopulationAnimals(arr){
+    // if the population is less than 5 it gets put into our small pop array
     const smallPop = arr.filter((item) => item.population < 5);
     return smallPop;
   }
