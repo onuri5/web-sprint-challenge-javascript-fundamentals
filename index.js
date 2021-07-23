@@ -17,7 +17,10 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+/*
+Variables and functions in javaScript all have the ability to reach out from within themselves and utilizes functions/variables declared in outer scopes. 
+nestedFunction() is nested within myFunction(), that means that nestedFunction() can utilize any variable inside myFunction().
+*/
 
 
 
